@@ -8,6 +8,8 @@ interface SharedButtonProps extends Omit<ButtonProps, 'style'> {
   onClick?: () => void;
 }
 
+console.log('Button component loaded');
+
 export const Button = ({ style = {}, variant = 'primary', ...props }: SharedButtonProps) => {
   const variantStyle = buttonVariants[variant];
 
